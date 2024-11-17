@@ -12,8 +12,8 @@ print(list_num)# вывод на консоль
 uniq_pairs=set()#создаем множество для уникальных пар
 
 for i in range(len(list_num)):#используем цикл for для создания уникальных пар
-    for j in range(i + 1, len(list_num)):#
-        uniq_pairs.add((list_num[i], list_num[j]))#
+    for j in range(i + 1, len(list_num)):#для следущего элемента после i
+        uniq_pairs.add((list_num[i], list_num[j]))#добавляет в множество кортеж из уникальных пар
 
 print("Уникальные пары:") #вывод уникальных пар на консоль 
 
